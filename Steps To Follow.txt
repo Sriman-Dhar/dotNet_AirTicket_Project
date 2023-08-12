@@ -1,0 +1,44 @@
+Here's an outline of the steps you can follow to update your project:
+
+Create Models: Define all your model classes based on your database structure.
+Create DbContext: Implement the AirTicketContext class that derives from DbContext and includes DbSet properties for each of your model classes.
+Create Repositories: Implement repositories for each of your entities based on your reference code.
+Create Services: Implement services for each of your entities based on your reference code.
+Implement AutoMapper: Configure AutoMapper to map between DTOs and models in your services.
+Create Controllers: Implement API controllers for each entity, where you use the corresponding service to handle HTTP requests and responses.
+Configure Dependency Injection: Set up dependency injection to inject services into your controllers.
+Test APIs: Test your APIs using tools like Postman.
+For each of these steps, I recommend starting with smaller parts and gradually building up your project. If you encounter specific issues or need assistance with a particular part, you can share the relevant code and describe the problem you're facing, and I'll be glad to help.
+
+If you need assistance with any of the specific steps, feel free to ask!
+
+
+
+
+You have the following queries left:
+
+EmployeeRepo.cs: You'll need to implement the CRUD operations for the Employee entity along with its associated records (EmployeeMail and EmployeeSalary).
+
+FlightInfoRepo.cs: Implement the CRUD operations for the FlightInfo entity.
+
+FlightManageRepo.cs: Implement the CRUD operations for the FlightManage entity.
+
+LocationRepo.cs: Implement the CRUD operations for the Location entity.
+
+ReservationRepo.cs: Implement the CRUD operations for the Reservation entity along with its associated records (TicketInfo).
+
+TicketInfoRepo.cs: Implement the CRUD operations for the TicketInfo entity.
+
+CustomerContactRepo.cs: You've mentioned creating this repo earlier. If you haven't implemented it yet, you need to do so for the CustomerContact entity.
+
+CustomerInfoRepo.cs: Similarly, if you haven't implemented this repo yet, you need to do so for the CustomerInfo entity.
+
+CustomerRepo.cs: Even though you've implemented it, you might want to revisit this repo to ensure that all methods are correctly implemented based on your updated requirements.
+
+EmployeeMailRepo.cs: Implement the CRUD operations for the EmployeeMail entity.
+
+EmployeeSalaryRepo.cs: Implement the CRUD operations for the EmployeeSalary entity.
+
+AdministrationRepo.cs: You've implemented it earlier, but make sure it aligns with your updated requirements.
+
+Remember, for each of these repositories, you'll need to follow the pattern of handling associated records and wrapping operations in transactions to ensure data integrity. Please adapt the patterns and codes I provided earlier for the CustomerRepo.cs as a guide.
